@@ -33,6 +33,5 @@ $(document).ready(function() {
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
     });
-    console.log(newContact);
   });
 });
