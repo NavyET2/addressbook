@@ -15,6 +15,21 @@
         <div class="col-md-6">
           <h2>Add a contact:</h2>
           <form id="new-contact">
+            <hr>
+            <div class="radio">
+              <label>
+                <input type="radio" name="address" id="primary" value="primary" checked>
+                Primary Address
+              </label>
+              <label>
+                <input type="radio" name="address" id="work" value="work">
+                Business Address
+              </label>
+              <label>
+                <input type="radio" name="address" id="secondary" value="secondary">
+                Secondary Address
+              </label>
+            </div>
             <div class="form-group">
               <label for="new-first-name">First name</label>
               <input type="text" class="form-control" id="new-first-name">
@@ -23,7 +38,6 @@
               <label for="new-last-name">Last name</label>
               <input type="text" class="form-control" id="new-last-name">
             </div>
-
             <div id="new-addresses">
               <div class="new-address">
                 <div class="form-group">
@@ -41,12 +55,14 @@
               </div>
             </div>
 
+
+
             <span class="btn btn-primary" id="add-address">Another address</span>
 
 
             <button type="submit" class="btn">Add</button>
           </form>
-
+          <hr>
           <h2>Contacts:</h2>
           <ul id="contacts">
 

@@ -31,7 +31,21 @@ function resetFields() {
 $(document).ready(function() {
 
   $("#add-address").click(function() {
-    $("#new-addresses").append('<div class="new-address">' +
+    $("#new-addresses").append('<div class="radio">' +
+                                '<label>' +
+                                  '<input type="radio" name="address2" id="primary" value="primary" checked>' +
+                                    'Primary Address' +
+                                '</label>' +
+                                '<label>' +
+                                  '<input type="radio" name="address2" id="work" value="work">' +
+                                    'Business Address' +
+                                '</label>' +
+                                '<label>' +
+                                  '<input type="radio" name="address2" id="secondary" value="secondary">' +
+                                  'Secondary Address' +
+                                '</label>' +
+                              '</div>'+
+                              '<div class="new-address">' +
                                   '<div class="form-group">' +
                                     '<label for="new-street">Street</label>' +
                                     '<input type="text" class="form-control new-street">' +
@@ -77,6 +91,6 @@ $(document).ready(function() {
     });
 
   resetFields();
-  
+
   }); // End form function
 }); // End Document.ready function
